@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/style.css" />
+    <title>Container</title>
+  </head>
+  <body>
+    <script src="../src/index.js"></script>
+    <div class="box">
+      <div class="inputarea">Header container descrition example</div>
+      <div class="inputarea2">
+        Header container description example <br />
+        was changed
+      </div>
+      <div class="inputarea3">Deleted</div>
+      <div class="buttons">
+        <button class="change" type="button" onclick="changer()">Change</button>
+        <button id="back" type="button" onclick="back()">Return</button>
+        <button type="button" onclick="deleteChanger()">
+          Delete description
+        </button>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="inputValue"
+          placeholder="Type new container description"
+          maxlength="20"
+        />
+      </div>
+
+      <div class="buttons">
+        <button type="button" onclick="addDiv()">Add container</button>
+        <button type="button" onclick="delAllDivs()">Delete all</button>
+      </div>
+    </div>
+  </body>
+</html>
